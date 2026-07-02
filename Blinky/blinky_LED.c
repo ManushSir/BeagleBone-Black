@@ -17,7 +17,7 @@ fclose(LED);
 sleep(5);
 }
 for (int i=5 ;i<=10;i++){
-if(LED =fopen(LED_PATH2,"r+")){
+if(LED =fopen(LED_PATH2,"w")){
 fwrite("1",1,1,LED);
 fclose(LED);}
 if(LED =fopen(LED_PATH2,"r+")){
