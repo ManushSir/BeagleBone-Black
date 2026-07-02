@@ -10,7 +10,7 @@ if(LED =fopen(LED_PATH1,"r+")){
 fwrite("1",1,1,LED);
 fclose(LED);
 }
-if(LED =fopen(LED_PATH1,"r+")){
+if(LED =fopen(LED_PATH1,"w")){
 fwrite("0",1,1,LED);
 fclose(LED);
 }
