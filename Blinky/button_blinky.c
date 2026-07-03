@@ -4,7 +4,7 @@
 #include <fcntl.h>    // open
 #include <string.h>   // strlen, snprintf
 
-#define BUTTON_GPIO 72
+#define BUTTON_GPIO 72 // This is the GPIO of on board button
 
 int main(void) {
     int button_fd;
