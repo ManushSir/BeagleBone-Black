@@ -8,7 +8,7 @@ for  (int i=0;i<=10;i++)
 {
 for (int j=0;j<=10;j++){
 if(LED =fopen(LEDPATH1,"w")){
-fwrite("1",1,1,LED);
+fwrite("1",1,1,LED);/*fwrite( const void *ptr, size_t size, size_t nmemb, FILE *stream ); Write 1 element of 1 byte from the memory starting at "1" into the file LED.*/
 fclose(LED);
 }
 }
