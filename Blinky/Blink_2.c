@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 int main (){
-FILE *LED = NULL;
+FILE *LED = NULL; /*Defining the name of the file as LED and defining it as NULL.*/
 char *LEDPATH1 = "/sys/class/leds/beaglebone:green:usr3/brightness";
 for  (int i=0;i<=10;i++)
 {
