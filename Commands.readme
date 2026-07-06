@@ -1,1 +1,8 @@
+The class for on board LED's are :
+LED_1: /sys/class/leds/beaglebone:green:usr0/brightness
+LED_2: /sys/class/leds/beaglebone:green:usr1/brightness
+LED_3: /sys/class/leds/beaglebone:green:usr2/brightness
+LED_4: /sys/class/leds/beaglebone:green:usr3/brightness
 
+To have heartbeat on LED : 
+echo heartbeat | sudo tee /sys/class/leds/beaglebone:green:usr0/trigger
