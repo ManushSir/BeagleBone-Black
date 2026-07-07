@@ -6,3 +6,9 @@ LED_4: /sys/class/leds/beaglebone:green:usr3/brightness
 
 To have heartbeat on LED : 
 echo heartbeat | sudo tee /sys/class/leds/beaglebone:green:usr0/trigger
+
+To get 3.3 V on GPIO PIN ( The pin used here in GPIO 60)
+cd /sys/class/gpio/gpio60
+echo out > direction
+echo 1 > value /*This provides 3.3V to GPIO 60*/
+echo 0 > value
