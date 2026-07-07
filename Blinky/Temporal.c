@@ -1,3 +1,4 @@
+/*This program blinks the LED on GPIO 60 on and off in temporal pattern for 10 times*/
 #include <stdio.h>
 #include<unistd.h>
 int main (){
