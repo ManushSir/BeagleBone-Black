@@ -1,10 +1,10 @@
-The class for on board LED's are :
+The class for on board LED's are:
 LED_1: /sys/class/leds/beaglebone:green:usr0/brightness
 LED_2: /sys/class/leds/beaglebone:green:usr1/brightness
 LED_3: /sys/class/leds/beaglebone:green:usr2/brightness
 LED_4: /sys/class/leds/beaglebone:green:usr3/brightness
 
-To have heartbeat on LED : 
+To have heartbeat on LED: 
 echo heartbeat | sudo tee /sys/class/leds/beaglebone:green:usr0/trigger
 
 To get 3.3 V on GPIO PIN ( The pin used here in GPIO 60)
@@ -12,3 +12,11 @@ cd /sys/class/gpio/gpio60
 echo out > direction
 echo 1 > value /*This provides 3.3V to GPIO 60*/
 echo 0 > value
+
+To test the GPIO PIN if they are input or output:
+
+config-pin P9_27 gpio
+config-pin P9_27 in+       # let's use input with pull‑up
+config-pin P9_27 in-       # let's use input with pull down resistor
+config-pin -q P9_27        # check current mode
+cat ./value                       # provides the value of output
