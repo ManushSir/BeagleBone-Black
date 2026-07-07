@@ -19,3 +19,4 @@ config-pin P9_27 gpio
 config-pin P9_27 in+       # let's use input with pull‑up
 config-pin P9_27 in-       # let's use input with pull down resistor
 config-pin -q P9_27        # check current mode
+cat ./value                       # provides the value of output
