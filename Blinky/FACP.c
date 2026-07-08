@@ -1,3 +1,4 @@
+/*This program turns On LED in standard UL fire alarm fashion*/
 #include <stdio.h>
 #include<unistd.h>
 int main (){
