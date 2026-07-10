@@ -29,7 +29,12 @@ printf("\nThe system is playing California Code\n");
 for(int i=0;i<10;i++){
 ledon();                                                                                                                                  
 usleep(5000000);
-ledoff();                                                                                                                                 usleep(10000000);                                                                                                                         }                                                                                                                                         }                                                                                                                                        int march(int d){                                                                                                                        printf(" The system is playing March Code ");                                                                                            for(int i=0;i<10;i++){
+ledoff();
+usleep(10000000);}
+} 
+int march(int d){
+printf(" The system is playing March Code ");
+for(int i=0;i<10;i++){
 if(GPIO = fopen(GPIO_60,"w")){                                                                                                           fwrite("1",1,1,GPIO);
 fclose(GPIO);                                                                                                                            usleep(500000);                                                                                                                          }                                                                                                                                      if(GPIO = fopen(GPIO_60,"w")){
 fwrite("0",1,1,GPIO);
