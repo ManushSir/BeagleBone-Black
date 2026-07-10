@@ -46,7 +46,9 @@ int c;
 printf("\nThis Programme runs LED's as per your command\n");                                                                             printf("\nPlease Enter \n 1 for Temporal Code \n 2 for California Code\n 3 for March Code\n 4 for Alert Code\n");                       
 scanf("%d",&c);                                                                                                                          
 switch (c)
-{                                                                                                                                        case 1:                                                                                                                                 tempo(c);                                                                                                                      
+{                                                                                                                   
+case 1:                                                                                                                                 
+tempo(c);                                                                                                                      
 break;
 case 2:                                                                                                                                  california(c);                                                                                                                          break;                                                                                                                             
 case 3:
