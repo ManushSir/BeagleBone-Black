@@ -18,7 +18,10 @@ usleep(2500000);
 }                                                                                                                                         }                                                                                                                                        int tempo(){                                                                                                                             printf("\nThe system is playing Temporal Tone\n");
 for (int i=0;i<10;i++){                                                                                                                   for (int i=0;i<3;i++){
 ledon();                                                                                                                                 usleep(500000);
-ledoff();                                                                                                                                 usleep(500000);                                                                                                                           }                                                                                                                                        usleep(1500000);
+ledoff(); 
+usleep(500000);
+}
+usleep(1500000);
 }
 }                                                                                                                                        int california(int b){                                                                                                                    printf("\nThe system is playing California Code\n");
 for(int i=0;i<10;i++){
