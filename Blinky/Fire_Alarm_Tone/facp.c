@@ -1,6 +1,8 @@
 #include <stdio.h>                                                                                                                     #include<unistd.h>
 FILE *GPIO = NULL;
-char *GPIO_60 = "/sys/class/leds/beaglebone:green:usr2/brightness";                                                                     int ledon(){                                                                                                                            (GPIO = fopen(GPIO_60,"w"));                                                                                                            fwrite("1",1,1,GPIO);                                                                                                                     fclose(GPIO);                                                                                                                             }
+char *GPIO_60 = "/sys/class/leds/beaglebone:green:usr2/brightness";                                                                     int ledon(){ 
+(GPIO = fopen(GPIO_60,"w"));                                                                                                            fwrite("1",1,1,GPIO);
+fclose(GPIO);                                                                                                                             }
 int ledoff(){
 GPIO = fopen(GPIO_60,"w");
 fwrite("0",1,1,GPIO);
