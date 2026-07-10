@@ -9,7 +9,11 @@ fwrite("0",1,1,GPIO);
 fclose(GPIO);
 }
 int alert(){
-printf("The system is playing Alert Tone");                                                                                              for (int i=0;i<10;i++){                                                                                                                  ledon();                                                                                                                                 usleep(500000);                                                                                                                          ledoff();
+printf("The system is playing Alert Tone");
+for (int i=0;i<10;i++){
+ledon(); 
+usleep(500000);
+ledoff();
 usleep(2500000);
 }                                                                                                                                         }                                                                                                                                        int tempo(){                                                                                                                             printf("\nThe system is playing Temporal Tone\n");
 for (int i=0;i<10;i++){                                                                                                                   for (int i=0;i<3;i++){
