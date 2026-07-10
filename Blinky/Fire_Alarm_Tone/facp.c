@@ -62,6 +62,7 @@ break;
 default:
 printf("\nSorry, Wrong Input. Please try again.");
 break;
-}                                                                                                                                      return 0;
+}                                                                                                                                      
+return 0;
 }           
 
