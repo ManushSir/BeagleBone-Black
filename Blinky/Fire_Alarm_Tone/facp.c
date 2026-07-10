@@ -55,7 +55,10 @@ california(c);
 break;                                                                                                                             
 case 3:
 march(c);
-break;                                                                                                                                  case 4:                                                                                                                              alert(c);                                                                                                                            break;
+break;                                                                                                                                  
+case 4:                                                                                                                              
+alert(c);                                                                                                                            
+break;
 default:
 printf("\nSorry, Wrong Input. Please try again.");
 break;
