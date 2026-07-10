@@ -50,7 +50,9 @@ switch (c)
 case 1:                                                                                                                                 
 tempo(c);                                                                                                                      
 break;
-case 2:                                                                                                                                  california(c);                                                                                                                          break;                                                                                                                             
+case 2:                                                                                                                                  
+california(c);                                                                                                                          
+break;                                                                                                                             
 case 3:
 march(c);
 break;                                                                                                                                  case 4:                                                                                                                              alert(c);                                                                                                                            break;
