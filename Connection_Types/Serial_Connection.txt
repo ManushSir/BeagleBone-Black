@@ -10,6 +10,6 @@ data Bits : 8
 Parity :None
 Stop Bits : 1
 Flow Control : None
-power cycle the beagle bone and select connect. 
+Power cycle the BBB and select connect. 
 Username : debian 
 Password : temppwd
