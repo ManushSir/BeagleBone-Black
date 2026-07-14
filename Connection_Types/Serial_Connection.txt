@@ -3,7 +3,7 @@ I have 4 wire converted to USB.
 Black wire --> PIN 1
 Green wire --> PIN 4
 White wire --> PIN 5
-Putty Setting : 
+Putty Settings : 
 Comport : 8 
 Speed : 115200
 data Bits : 8 
