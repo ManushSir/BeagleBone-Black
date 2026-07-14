@@ -1,0 +1,15 @@
+The first type connection is via serial communication. 
+I have 4 wire converted to USB. 
+Black wire --> PIN 1
+Green wire --> PIN 4
+White wire --> PIN 5
+Putty Settings : 
+Comport : 8 
+Speed : 115200
+data Bits : 8 
+Parity :None
+Stop Bits : 1
+Flow Control : None
+Power cycle the BBB and select connect. 
+Username : debian 
+Password : temppwd
