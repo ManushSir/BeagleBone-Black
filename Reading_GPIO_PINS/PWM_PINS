@@ -1,0 +1,11 @@
+In the following documents, we will see how to program PWM PIN
+These are the pins which provide pulse width modulation. 
+The pins are : p9_14 and P9_21
+ config-pin -q P9_21  --> should be pwm
+config-pin P9_21 pwm
+/sys/class/pwm/pwmchip1
+echo 0 > export
+/sys/class/pwm/pwmchip1# cd pwm1
+/sys/class/pwm/pwmchip1/pwm1# echo 20000000 > period
+root@beaglebone:/sys/class/pwm/pwmchip1/pwm1# echo 15000000 > duty_cycle
+root@beaglebone:/sys/class/pwm/pwmchip1/pwm1# echo 1 > enable
