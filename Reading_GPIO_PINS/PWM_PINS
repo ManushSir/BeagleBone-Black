@@ -1,3 +1,4 @@
+In the following documents, we will see how to program PWM PIN
 These are the pins which provide pulse width modulation. 
 The pins are : p9_14 and P9_21
  config-pin -q P9_21  --> should be pwm
