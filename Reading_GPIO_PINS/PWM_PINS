@@ -9,3 +9,81 @@ echo 0 > export
 /sys/class/pwm/pwmchip1/pwm1# echo 20000000 > period
 root@beaglebone:/sys/class/pwm/pwmchip1/pwm1# echo 15000000 > duty_cycle
 root@beaglebone:/sys/class/pwm/pwmchip1/pwm1# echo 1 > enable
+
+On 18 July 2026 12:00 am . I was succesfully able to blink the LED using PWM 
+P8_13 EHRPWM2B
+
+debian@beaglebone:~$ sudo -i
+[sudo] password for debian: 
+root@beaglebone:~# cd /sys
+root@beaglebone:/sys# cd class
+root@beaglebone:/sys/class# cd pwm
+root@beaglebone:/sys/class/pwm# ls -al
+total 0
+drwxrwxr-x  2 root pwm  0 Dec 31  1999 .
+drwxr-xr-x 57 root root 0 Jul 16 02:59 ..
+lrwxrwxrwx  1 root pwm  0 Jul 16 01:46 pwmchip0 -> ../../devices/platform/ocp/48300000.epwmss/48300100.ecap/pwm/pwmchip0
+lrwxrwxrwx  1 root pwm  0 Jul 16 01:46 pwmchip1 -> ../../devices/platform/ocp/48300000.epwmss/48300200.pwm/pwm/pwmchip1
+lrwxrwxrwx  1 root pwm  0 Jul 16 01:46 pwmchip3 -> ../../devices/platform/ocp/48302000.epwmss/48302200.pwm/pwm/pwmchip3
+lrwxrwxrwx  1 root pwm  0 Jul 16 01:46 pwmchip5 -> ../../devices/platform/ocp/48304000.epwmss/48304100.ecap/pwm/pwmchip5
+lrwxrwxrwx  1 root pwm  0 Jul 16 01:46 pwmchip6 -> ../../devices/platform/ocp/48304000.epwmss/48304200.pwm/pwm/pwmchip6
+root@beaglebone:/sys/class/pwm# cd pwmchip6
+root@beaglebone:/sys/class/pwm/pwmchip6# ls -al
+total 0
+drwxrwxr-x 4 root pwm     0 Jul 16 03:11 .
+drwxr-xr-x 3 root root    0 Jul 16 03:11 ..
+lrwxrwxrwx 1 root pwm     0 Jul 16 01:46 device -> ../../../48304200.pwm
+-rw-rw---- 1 root pwm  4096 Jul 16 03:11 export
+-rw-rw-r-- 1 root pwm  4096 Dec 31  1999 npwm
+drwxrwxr-x 2 root pwm     0 Dec 31  1999 power
+drwxr-xr-x 3 root root    0 Jul 16 03:11 pwm1
+lrwxrwxrwx 1 root pwm     0 Jul 16 01:46 subsystem -> ../../../../../../../class/pwm
+-rw-rw-r-- 1 root pwm  4096 Dec 31  1999 uevent
+-rw-rw---- 1 root pwm  4096 Dec 31  1999 unexport
+root@beaglebone:/sys/class/pwm/pwmchip6# cd pwm1
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# ls -al
+total 0
+drwxr-xr-x 3 root root    0 Jul 16 03:11 .
+drwxrwxr-x 4 root pwm     0 Jul 16 03:11 ..
+-rw-r--r-- 1 root root 4096 Jul 16 03:11 duty_cycle
+-rw-r--r-- 1 root root 4096 Jul 16 03:11 enable
+-rw-r--r-- 1 root root 4096 Jul 16 03:11 period
+-rw-r--r-- 1 root root 4096 Jul 16 03:11 polarity
+drwxr-xr-x 2 root root    0 Jul 16 03:11 power
+-rw-r--r-- 1 root root 4096 Jul 16 03:11 uevent
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# cat ./duty_cycle
+0
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# config-pin P8_13 pwm
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 1 > enable
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 20000000 > period
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 15000000 > duty_cycle
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 1 > enable
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# cat ./duty_cycle
+15000000
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 1 > enable
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 0 > enable
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 1 > enable
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 200000000 > period
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 150000000 > duty_cycle
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 2000000000 > period
+-bash: echo: write error: Numerical result out of range
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 5000000000 > period
+-bash: echo: write error: Numerical result out of range
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 50000000 > period
+-bash: echo: write error: Invalid argument
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 5000000 > period
+-bash: echo: write error: Invalid argument
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 150000 > duty_cycle
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 50000 > period
+-bash: echo: write error: Invalid argument
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 500000 > period
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 15000 > duty_cycle
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 1500000 > duty_cycle
+-bash: echo: write error: Invalid argument
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 5000000 > period
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 1500000 > duty_cycle
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 200000000 > period
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 100000000 > period
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 15000000 > duty_cycle
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 15000000 > duty_cycle
+
