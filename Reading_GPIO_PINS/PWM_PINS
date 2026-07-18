@@ -86,4 +86,13 @@ root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 200000000 > period
 root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 100000000 > period
 root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 15000000 > duty_cycle
 root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 15000000 > duty_cycle
+For Slow LED Blinks : 
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 35000000 > duty_cycle
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 55000000 > duty_cycle
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# 
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 300000000 > period
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 400000000 > period
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 500000000 > period
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 550000000 > period
+root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 550000000 > period
 
