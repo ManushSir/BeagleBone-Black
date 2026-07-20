@@ -1,4 +1,6 @@
-/*In this program we will design the input pin to control the output.*/
+/*In this program we will design the input pin to control the output LED.
+This is by far the best version of program written. This program  ensures the input pin is exported to become input and output pin is exported to output. After that it also asks user to provide input and output pin. 
+However, This program requires some beautification. */
 #include <stdio.h>
 #include<unistd.h>
 FILE *GPIO = NULL;
