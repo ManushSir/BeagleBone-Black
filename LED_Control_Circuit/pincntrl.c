@@ -37,7 +37,7 @@ char direction[50];
 sprintf(path,"/sys/class/gpio/gpio%d/value",oppin);/*This command helps to enter the GPIO pin by end user.*/
 sprintf(direction,"/sys/class/gpio/gpio%d/direction",oppin);
 EXPO =fopen(direction,"w");
-fwrite("out",1,3,EXPO);
+fwrite("out",1,3,EXPO);/*Kindly ensure to add 3 as the character out takes 3 bytes of space*/
 fclose(EXPO);
 LED = fopen(path,"w");
 if(LED == NULL){
