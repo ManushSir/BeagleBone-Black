@@ -96,3 +96,17 @@ root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 500000000 > period
 root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 550000000 > period
 root@beaglebone:/sys/class/pwm/pwmchip6/pwm1# echo 550000000 > period
 
+Table to remeber : 
+P8_13 --> pwmchip6/pwm1  --> use command echo 1 > export
+p8_19 --> pwmchip6/pwm0  --> use command echo 0 > export
+P9_14 --> pwmchip3/pwm0 or pwm 1 --> both works for this pin
+P9_16 --> pwmchip3/pwm 0 or pwm 1 --> both owrks for this pin
+debian@beaglebone:/sys/class/pwm/pwmchip3$ echo 0 | sudo tee export
+debian@beaglebone:/sys/class/pwm/pwmchip3$ echo 1 | sudo tee export
+debian@beaglebone:/sys/class/pwm/pwmchip3$ cd pwm0
+debian@beaglebone:/sys/class/pwm/pwmchip3/pwm0$ echo 0 | sudo tee enable
+debian@beaglebone:/sys/class/pwm/pwmchip3/pwm0$ echo 200000000 | sudo tee period
+debian@beaglebone:/sys/class/pwm/pwmchip3/pwm0$ echo 30000000 | sudo tee duty_cycle
+debian@beaglebone:/sys/class/pwm/pwmchip3/pwm0$ echo 1 | sudo tee enable
+
+
