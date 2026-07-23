@@ -9,7 +9,7 @@ char *PWM_P9_16 = "/sys/class/pwm/pwmchip3/pwm1"
 char *PWM_P8_13 = "/sys/class/pwm/pwmchip6/pwm1"
 char *PWM_P8_19 = "/sys/class/pwm/pwmchip6/pwm0"
 
-int pin_export_P9(void){
+int pin_export_P9(void){ /*This Programme exports PIn on slot 9 */
 EXPO = fopen(PWM_P9,"w");
 if(EXPO == NULL)
 {
@@ -21,7 +21,7 @@ fclose(EXPO);
 return 0 ;
 }
 
-int pin_export_P8(void){
+int pin_export_P8(void){  /*This Programme exports PIN on slot 8 */
 EXPO = fopen(PWM_P8,"w");
 if(EXPO == NULL)
 {
