@@ -1,3 +1,4 @@
+/*In this series of program, we will try to program user to control the of brightness of the LED*/
 #include<stdio.h>
 #include<unistd.h>
 FILE *EXPO = NULL;
