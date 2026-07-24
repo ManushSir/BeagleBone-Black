@@ -1,3 +1,4 @@
+/*This programme is used to write PWm on beaglebone black*/
 #include<stdio.h>
 #include<unistd.h>
 #include<stdlib.h>
@@ -102,6 +103,7 @@ fprintf(f,"0");
 fclose(f);
 return 0;
 }
+
 int main (void) {
 int pin;
 unsigned long long duty_cycle;
@@ -116,7 +118,6 @@ printf("\nKinldy enter the desired duty cycle in hz");
 scanf("%llu",&duty_cycle);
 printf("\nkindly enter the desired period ");
 scanf("%llu",&period);
-
 switch (pin){
 case 1 :
 pin_export_P8_pwm0();
@@ -126,7 +127,6 @@ case 2 :
 pin_export_P8_pwm1();
 pin_P8_19(pin,duty_cycle,period);
 break;
-
 default :
 printf("\nSorry wrong input pin , please retry\n");
 }
