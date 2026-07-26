@@ -13,3 +13,6 @@ Flow Control : None
 Power cycle the BBB and select connect. 
 Username : debian 
 Password : temppwd
+To connect via UBUNTU 
+open terminal window and type : 
+sudo screen /dev/ttyUSB0 115200
