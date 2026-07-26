@@ -75,7 +75,7 @@ fprintf(f,"0");
 fclose(f);
 return 0;
 }
-int pin_P8_19 (int  input,unsigned long long duty_cycle,unsigned long long period){
+int pin_P8_19 (int input,unsigned long long duty_cycle,unsigned long long period){
 char path[128];
 FILE *f;
 system("config-pin P8_19 pwm");
