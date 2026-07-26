@@ -75,7 +75,7 @@ fprintf(f,"0");
 fclose(f);
 return 0;
 }
-int pin_P8_19 (int  input,unsigned long long duty_cycle,unsigned long long period){
+int pin_P8_19 (int input,unsigned long long duty_cycle,unsigned long long period){
 char path[128];
 FILE *f;
 system("config-pin P8_19 pwm");
@@ -114,9 +114,9 @@ printf("\n For using P8_19 Select 2\n");
 printf("\n For using P9_14 Select 3\n");
 printf("\n For using P9_16 Select 4\n");
 scanf("%d",&pin);
-printf("\nKinldy enter the desired duty cycle in hz");
+printf("\nKinldy enter the desired duty cycle in hz\t");
 scanf("%llu",&duty_cycle);
-printf("\nkindly enter the desired period ");
+printf("\nKindly enter the desired period\t");
 scanf("%llu",&period);
 switch (pin){
 case 1 :
