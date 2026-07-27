@@ -4,8 +4,8 @@
 #include<stdlib.h>
 FILE *EXPO = NULL;
 FILE *DIR = NULL;
-char *PWM_P9 = "/sys/class/pwm/pwmchip3/export";
-char *PWM_P8 = "/sys/class/pwm/pwmchip6/export";
+char *PWM_P9 = "/sys/class/pwm/pwmchip3/export"; /*Export pins 14 and 16*/
+char *PWM_P8 = "/sys/class/pwm/pwmchip6/export";/*Export pins 13 and 19*/
 char *PWM_P9_14 = "/sys/class/pwm/pwmchip3/pwm0";
 char *PWM_P9_16 = "/sys/class/pwm/pwmchip3/pwm1";
 char *PWM_P8_13 = "/sys/class/pwm/pwmchip6/pwm1";
