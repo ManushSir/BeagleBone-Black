@@ -9,7 +9,7 @@ fwrite("0",1,1,GPIO);
 fclose(GPIO);
 }
 int alert(){
-printf("The system is playing Alert Tone");/*This option plays claifirnia code*/
+printf("The system is playing Alert Tone");/*This option plays Alert Tone*/
 for (int i=0;i<10;i++){
 ledon(); 
 usleep(500000);
