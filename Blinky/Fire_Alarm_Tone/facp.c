@@ -25,7 +25,7 @@ usleep(1500000);
 }
 }
 int california(int b){
-printf("\nThe system is playing California Code\n");/*This Option plays california code*/
+printf("\nThe system is playing California Code\n");  /*This Option plays California Code*/
 for(int i=0;i<10;i++){
 ledon();                                                                                                                                  
 usleep(5000000);
