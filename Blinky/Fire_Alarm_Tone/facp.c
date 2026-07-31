@@ -9,7 +9,7 @@ fwrite("0",1,1,GPIO);
 fclose(GPIO);
 }
 int alert(){
-printf("The system is playing Alert Tone");
+printf("The system is playing Alert Tone");/*This option plays Alert Tone*/
 for (int i=0;i<10;i++){
 ledon(); 
 usleep(500000);
@@ -25,7 +25,7 @@ usleep(1500000);
 }
 }
 int california(int b){
-printf("\nThe system is playing California Code\n");
+printf("\nThe system is playing California Code\n");  /*This Option plays California Code*/
 for(int i=0;i<10;i++){
 ledon();                                                                                                                                  
 usleep(5000000);
