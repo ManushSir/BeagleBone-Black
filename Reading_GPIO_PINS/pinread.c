@@ -1,5 +1,4 @@
 #include<unistd.h>
-C:\Users\mapatel>;
 FILE *LED = NULL;
 char *GPIO_27 = "/sys/class/gpio/gpio27/value";
 char *LED_60 = "/sys/class/gpio/gpio60/value";
