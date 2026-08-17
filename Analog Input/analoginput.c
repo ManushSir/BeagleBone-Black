@@ -1,3 +1,4 @@
+/*This program displays analog input on analog pin 33*/
 #include<stdio.h>
 #include<unistd.h>
 #include<stdlib.h>
