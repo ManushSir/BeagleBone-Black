@@ -1,2 +1,4 @@
 We will learn and design analog input in Beaglebone black.
 The input pins are 33,35,36,37,38,39,40.
+Pin 33 : 
+/sys/bus/iio/devices/iio:device0$ cat ./in_voltage4_raw
