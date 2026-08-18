@@ -119,7 +119,6 @@ fprintf(f,"0");
 fclose(f);
 return 0;
 }
-
 /*Programming for Pin 9_14*/
 int pin_P9_14 (int input,unsigned long long duty_cycle,unsigned long long period){
 char path[128];
