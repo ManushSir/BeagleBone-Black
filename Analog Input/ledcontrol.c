@@ -222,7 +222,7 @@ case 3 :
 pin_export_P9_pwm1();
 pin_P9_14(pin,duty_cycle,period);
 break;
-case 4 :
+case 4 :/*Pin control for case 4*/
 pin_export_P9_pwm0();
 pin_P9_16(pin,duty_cycle,period);
 break;
