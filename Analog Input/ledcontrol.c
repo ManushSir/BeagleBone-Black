@@ -218,6 +218,14 @@ case 2 :
 pin_export_P8_pwm1();
 pin_P8_19(pin,duty_cycle,period);
 break;
+case 3 :
+pin_export_P9_pwm1();
+pin_P9_14(pin,duty_cycle,period);
+break;
+case 4 :
+pin_export_P9_pwm0();
+pin_P9_16(pin,duty_cycle,period);
+break;
 default :
 printf("\nSorry wrong input pin , please retry\n");
 }
