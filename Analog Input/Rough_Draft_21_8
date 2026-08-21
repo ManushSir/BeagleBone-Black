@@ -1,4 +1,5 @@
 /* Program to use PWM and analog input pin to control LED brightness*/
+/*Kindly ensure to use only one PIN and try to resolve the while error. */
 #include<stdio.h>
 #include<unistd.h>
 #include<stdlib.h>
