@@ -1,2 +1,3 @@
 This is the first official project that shall implement to create Sudarshan chakra behind lord Ganesh. 
 The project is to create a controlling Sudarshan chakra and controlling the motor using PWM and analog input. 
+We will use PIN_33 to control the speed of wheel. 
