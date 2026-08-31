@@ -4,3 +4,4 @@ We will work slowly and steadily to understand and integrate Beaglebone Black. W
 Accomplishments up to date : 
 1. Learnt to export and manipulate GPIO pins.
 2. Learn to export and manipulate PWM pins.
+31 August : Project Sudarshan Chakra
