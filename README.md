@@ -5,3 +5,4 @@ Accomplishments up to date :
 1. Learnt to export and manipulate GPIO pins.
 2. Learn to export and manipulate PWM pins.
 31 August : Project Sudarshan Chakra.
+12 September 2026 : running behind on operation Sudarshan. Need to work on it. 
