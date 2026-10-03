@@ -9,7 +9,7 @@ char *PWM_P8 = "/sys/class/pwm/pwmchip6/export";/*Export pins 13 and 19*/
 char *PWM_P9_14 = "/sys/class/pwm/pwmchip3/pwm0";/*Port 9 pin number 14*/
 char *PWM_P9_16 = "/sys/class/pwm/pwmchip3/pwm1";/*Port 9 pin number 16*/
 char *PWM_P8_13 = "/sys/class/pwm/pwmchip6/pwm1";/*Port 8 pin number 13*/
-char *PWM_P8_19 = "/sys/class/pwm/pwmchip6/pwm0";/*Port 8 pin number 19
+char *PWM_P8_19 = "/sys/class/pwm/pwmchip6/pwm0";/*Port 8 pin number 19*/
 /*Export Pin 9 and create pin number 14*/
 int pin_export_P9_pwm1(void){
 EXPO = fopen(PWM_P9,"w");
